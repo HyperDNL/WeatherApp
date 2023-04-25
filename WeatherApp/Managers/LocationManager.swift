@@ -15,7 +15,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         manager.delegate = self
     }
     
-    // Solicita la entrega por única vez de la ubicación actual del usuario,
+    // Solicita la entrega por única vez de la ubicación actual del usuario
     func requestLocation() {
         isLoading = true
         manager.requestLocation()
